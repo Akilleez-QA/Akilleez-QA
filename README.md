@@ -11,7 +11,7 @@ Each project aims to ship with its proof: tests, measured claims and clear licen
 
 | Repository | Role | Relation |
 |---|---|---|
-| [cstack](https://github.com/Akilleez-QA/cstack) | Runs Foundations behind pinned adapters under one human approver | Host |
+| cstack (coming soon) | Runs Foundations behind pinned adapters under one human approver | Host |
 | [foundation-engine](https://github.com/Akilleez-QA/foundation-engine) | TypeScript and three.js framework for browser games | Foundation |
 | [foundation-math](https://github.com/Akilleez-QA/foundation-math) | Exact mathematical kernels and physics research tools | Foundation |
 | [foundation-film](https://github.com/Akilleez-QA/foundation-film) | Film-production acceptance checks | Foundation |
