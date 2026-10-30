@@ -13,4 +13,4 @@ Each project aims to ship with its proof: tests, measured claims and clear licen
 
 ## Commercial licensing
 
-These projects are available under their stated open-source licenses: GPL-3.0-only for foundation-engine, foundation-math, endoforge and poodo. If you want to use one in a product or service under different terms, commercial licenses are available from Refrigeration.AI. Contact craig@nh3.biz.
+These projects are available under their stated open-source licenses: GPL-3.0-only for foundation-engine, foundation-math, endoforge and poodo. If you want to use them to create a product or service under different terms, commercial licenses are available from Refrigeration.AI. Contact craig@nh3.biz.
