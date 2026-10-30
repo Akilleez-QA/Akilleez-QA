@@ -10,8 +10,7 @@ Each project aims to ship with its proof: tests, measured claims and clear licen
 | [endoforge](https://github.com/Akilleez-QA/endoforge) | In-isolate software workshop for running many coding agents with fast checks, caching and evidence receipts. |
 | [poodo](https://github.com/Akilleez-QA/poodo) | Agent skill that makes an agent show its evidence before it acts. |
 | [foundation-math](https://github.com/Akilleez-QA/foundation-math) | Exact mathematical kernels and physics research tools with reproducible evidence reports. |
-| [swg-source-harness](https://github.com/Akilleez-QA/swg-source-harness) | Contribution harness for SWG Source: guides, agent instructions and evidence preflight. |
 
 ## Commercial licensing
 
-These projects are available under their stated open-source licenses: GPL-3.0-only for foundation-engine, foundation-math and endoforge, and MIT for poodo and swg-source-harness. If you want to use one in a product or service under different terms, commercial licenses are available from Refrigeration.AI. Contact craig@nh3.biz.
+These projects are available under their stated open-source licenses: GPL-3.0-only for foundation-engine, foundation-math, endoforge and poodo. If you want to use one in a product or service under different terms, commercial licenses are available from Refrigeration.AI. Contact craig@nh3.biz.
