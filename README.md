@@ -4,7 +4,7 @@
 
 # Akilleez
 
-Open-source engineering work from Refrigeration.AI. Most of it is one family of projects, the Cstack family, named after its central repository, [cstack](https://github.com/Akilleez-QA/cstack). Its tools run AI agents on your own machine, where risky actions wait for a human, domain calculations come from pinned and tested packages, and every result is recorded with its evidence.
+Open-source engineering work from Refrigeration.AI. Most of it is one family of projects, the Cstack family, named after its central repository, [cstack](https://github.com/Akilleez-QA/cstack). Its tools are for building and running software with AI agents on your own machine, where risky actions wait for a human, domain calculations come from pinned and tested packages, and every result is recorded with its evidence.
 
 ## How the family fits together
 
@@ -13,12 +13,12 @@ flowchart TD
     A["Your AI agents"] --> C["cstack<br/>control core"]
     Y["You"] -->|approve or deny| C
     P["poodo<br/>reasoning method"] -.->|steps the core enforces| C
-    C --> E["endoforge<br/>writes and checks code"]
+    C --> E["endoforge<br/>builds and checks software"]
     C --> F["Foundations<br/>pinned domain tools"]
     E --> F
 ```
 
-**cstack** is a template you fork and run on your own machine, and your agents connect to it. It makes them state a goal and their reasoning in the order **poodo** defines (poodo is also usable on its own, as an agent skill), holds risky calls for your approval, and runs domain tools only from **Foundations** whose files match their recorded hashes. When an agent needs new code, cstack hands the job to **endoforge**, which has a model write a small WebAssembly program and checks its answers against a Foundation's own answers.
+**cstack** is the host: a local-first system you fork and run on your own machine, and your agents connect to it. It makes them state a goal and their reasoning in the order **poodo** defines (poodo is also usable on its own, as an agent skill), holds risky calls for your approval, and runs domain tools only from **Foundations** whose files match their recorded hashes. When agents build software, cstack hands the job to **endoforge**, the runtime where coding agents build real software: it finds, reuses or generates code, checks it inside fast V8-isolate workcells against an independent evaluator the code never saw, and records the result in a tamper-evident ledger so trusted code gets reused.
 
 ## The projects
 
@@ -26,8 +26,8 @@ A *Foundation* is a package of domain tools that cstack runs only while its file
 
 | Project | What it is | Role |
 |---|---|---|
-| [cstack](https://github.com/Akilleez-QA/cstack) | A template for running a team of AI bots on your own machine, where every action goes through one control core and anything risky waits for one human to approve it | Host |
-| [endoforge](https://github.com/Akilleez-QA/endoforge) | Research engine that turns short needs into WebAssembly kernels, with frozen specs, gates in V8 isolates and a hash-chained evidence ledger. In plain words: you describe a small function, a model writes it, and it is accepted only if it passes tests fixed in advance | Engine for code-writing goals |
+| [cstack](https://github.com/Akilleez-QA/cstack) | A local-first system for building and running software with AI agents under your control: one control core owns goals, decisions, permissions and evidence, Foundations supply domain knowledge and checks, and anything risky waits for a human | Host |
+| [endoforge](https://github.com/Akilleez-QA/endoforge) | The runtime where coding agents build real software. It finds, reuses or generates code, checks it inside fast V8-isolate workcells against an independent evaluator the code never saw, and records the result in a tamper-evident ledger so trusted code gets reused | Runtime for building software |
 | [poodo](https://github.com/Akilleez-QA/poodo) | A skill (instructions an agent loads) that makes it show its evidence before it acts, for Codex and Agent Skills clients | Reasoning method |
 | [foundation-math](https://github.com/Akilleez-QA/foundation-math) | Exact mathematical kernels, certificate verifiers and evidence reports in standard-library Python | Foundation |
 | [foundation-refrigeration](https://github.com/Akilleez-QA/foundation-refrigeration) | Read-only refrigeration reference data: saturation tables generated with CoolProp, unit conversion, cited ammonia exposure limits. Not for safety decisions | Foundation |
